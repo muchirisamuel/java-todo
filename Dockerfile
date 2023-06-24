@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # Copy the application JAR file and the start script to the container
-COPY build/install/java-todo"/ .
+COPY build/install/java-todo/ .
 
 # Set the entrypoint command to start the application
 ENTRYPOINT ["./bin/java-todo"]
