@@ -2,10 +2,10 @@
 FROM openjdk:8-jdk-alpine
 
 # Set the working directory inside the container
-WORKDIR /java-todo/
+WORKDIR /Moringa/
 
 # Copy the application JAR file and the start script to the container
 COPY java-todo/ .
 
 # Set the entrypoint command to start the application
-ENTRYPOINT ["./bin/java-todo"]
+ENTRYPOINT ["./build/install/todo/bin/todo"]
